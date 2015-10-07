@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FavoriteStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8N-5U-nAr">
+                                <rect key="frame" x="279" y="285" width="43" height="30"/>
+                                <state key="normal" title="Songs">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hSJ-6y-OMe" kind="presentation" id="nQK-fw-SVO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxV-WX-KBq">
+                                <rect key="frame" x="276" y="155" width="49" height="30"/>
+                                <state key="normal" title="Movies">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WbY-x2-45j" kind="presentation" id="Djo-lA-hUM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mj-az-W1o">
+                                <rect key="frame" x="163" y="415" width="275" height="30"/>
+                                <state key="normal" title="Expressions of Extreme Pretentiousness">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DFe-MY-VJ8" kind="presentation" id="1qg-rb-E0K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5mj-az-W1o" firstAttribute="top" secondItem="r8N-5U-nAr" secondAttribute="bottom" constant="100" id="CzN-mP-9kg"/>
+                            <constraint firstItem="r8N-5U-nAr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FJB-1N-P09"/>
+                            <constraint firstItem="r8N-5U-nAr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TMo-Wf-sH0"/>
+                            <constraint firstItem="5mj-az-W1o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cFw-sD-JDV"/>
+                            <constraint firstItem="r8N-5U-nAr" firstAttribute="top" secondItem="wxV-WX-KBq" secondAttribute="bottom" constant="100" id="jtK-4K-eoz"/>
+                            <constraint firstItem="wxV-WX-KBq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ycr-uu-L5M"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Favorite Songs View Controller-->
+        <scene sceneID="bVb-2M-plw">
+            <objects>
+                <viewController id="hSJ-6y-OMe" customClass="FavoriteSongsViewController" customModule="FavoriteStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EY2-X4-mbM"/>
+                        <viewControllerLayoutGuide type="bottom" id="iog-t4-Sfa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ulI-C6-DoU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqe-bn-fib">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.9718486529" blue="0.73650938389999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Return to Home">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Yds-Ku-Ryg"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6EG-nQ-0nO">
+                                <rect key="frame" x="20" y="28" width="560" height="514"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hSJ-6y-OMe" id="lq2-6x-zHY"/>
+                                    <outlet property="delegate" destination="hSJ-6y-OMe" id="Oeo-Jj-BRE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dqe-bn-fib" secondAttribute="trailing" id="Cye-Qf-15F"/>
+                            <constraint firstItem="iog-t4-Sfa" firstAttribute="top" secondItem="dqe-bn-fib" secondAttribute="bottom" constant="20" id="Dj8-84-91d"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dqe-bn-fib" secondAttribute="leading" id="Ynn-Y4-enu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vtj-x3-WeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="292"/>
+        </scene>
+        <!--Pretentious Moves View Controller-->
+        <scene sceneID="ByF-6Y-5It">
+            <objects>
+                <viewController id="DFe-MY-VJ8" customClass="PretentiousMovesViewController" customModule="FavoriteStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c86-m4-oHb"/>
+                        <viewControllerLayoutGuide type="bottom" id="0lI-IY-61D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="in4-pn-mkk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e82-S9-Rb2">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.9718486529" blue="0.73650938389999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Return to Home">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorView="e82-S9-Rb2" id="JSl-ql-fF3">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z7a-mx-sgb">
+                                <rect key="frame" x="20" y="28" width="560" height="514"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DFe-MY-VJ8" id="U0k-k1-Pf4"/>
+                                    <outlet property="delegate" destination="DFe-MY-VJ8" id="gAd-Jc-TLd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="z7a-mx-sgb" secondAttribute="leading" id="8il-AB-bRt"/>
+                            <constraint firstItem="0lI-IY-61D" firstAttribute="top" secondItem="e82-S9-Rb2" secondAttribute="bottom" constant="20" id="D2o-0x-C8B"/>
+                            <constraint firstItem="e82-S9-Rb2" firstAttribute="top" secondItem="z7a-mx-sgb" secondAttribute="bottom" constant="8" id="Sm2-2U-WQu"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="e82-S9-Rb2" secondAttribute="leading" id="aUx-db-umN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e82-S9-Rb2" secondAttribute="trailing" id="cbw-XM-5HU"/>
+                            <constraint firstItem="z7a-mx-sgb" firstAttribute="top" secondItem="c86-m4-oHb" secondAttribute="bottom" constant="8" id="kuA-1v-F02"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z7a-mx-sgb" secondAttribute="trailing" id="lrU-JY-PI7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEQ-8k-gTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="967"/>
+        </scene>
+        <!--Favorite Movies View Controller-->
+        <scene sceneID="F4O-02-CbD">
+            <objects>
+                <viewController id="WbY-x2-45j" customClass="FavoriteMoviesViewController" customModule="FavoriteStuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0BZ-H1-rvr"/>
+                        <viewControllerLayoutGuide type="bottom" id="hxs-zc-qiF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5WF-GV-7Ex">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3J-5o-dCo">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.9718486528895105" blue="0.73650938389370091" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Return to Home">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="3IB-rB-z0K"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BWJ-lp-RQm">
+                                <rect key="frame" x="20" y="28" width="560" height="514"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WbY-x2-45j" id="K3v-Ye-oJk"/>
+                                    <outlet property="delegate" destination="WbY-x2-45j" id="fy9-Zi-Knq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hxs-zc-qiF" firstAttribute="top" secondItem="V3J-5o-dCo" secondAttribute="bottom" constant="20" id="bCM-Hk-lU8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="V3J-5o-dCo" secondAttribute="leading" id="ftL-Gq-gxt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V3J-5o-dCo" secondAttribute="trailing" id="gpO-P8-l5N"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KxA-W3-weZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="-386"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yds-Ku-Ryg"/>
+    </inferredMetricsTieBreakers>
+</document>
